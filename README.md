@@ -8,7 +8,7 @@ This will give you the authentication token to log into the jupyternotebook runn
 
 Alternatively to get the authentication token, 
 use the command ```docker run -d -p 8888:8888 <container-name>``` 
-For example, ```docker run -d -p 8888:8888 heliumdatastage/autoencoder-demo:<tagname>``` followed by ```docker ps -a``` to get the container- ID. 
+(for example, ```docker run -d -p 8888:8888 heliumdatastage/autoencoder-demo:<tagname>```) followed by ```docker ps -a``` to get the container- ID. 
 Once you have the container ID, you will be able to access the authentication token by running 
 ```docker exec -t -i <container-id> /bin/bash``` which will launch the notebook shell. 
 Once inside the notebook shell, type jupyter notebook list to get the token.
