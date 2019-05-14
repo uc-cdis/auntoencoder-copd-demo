@@ -8,10 +8,10 @@ COPY Autoencoder_DL /home/$NB_USER/Autoencoder_DL
 COPY requirements.txt /tmp/
 USER root
 RUN chmod +x /home/$NB_USER/Autoencoder_DL/
-USER $NB_USER
 RUN conda install --yes --file /tmp/requirements.txt && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
+USER $NB_USER
 WORKDIR /home/$NB_USER
 EXPOSE 8888
 
