@@ -14,4 +14,3 @@ RUN conda install --yes --file /tmp/requirements.txt && \
 USER $NB_USER
 WORKDIR /home/$NB_USER
 EXPOSE 8888
-
